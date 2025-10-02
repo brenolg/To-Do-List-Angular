@@ -1,4 +1,4 @@
-@import './dist/scss/variables.scss';
+@use './dist/scss/variables.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 *{

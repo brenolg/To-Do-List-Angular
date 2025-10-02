@@ -1,5 +1,4 @@
-@import '../../../../../dist/scss/variables.scss';
-
+@use '../../../../../dist/scss/variables.scss' as *;
 
 :host {
   display: flex;
