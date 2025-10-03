@@ -33,3 +33,8 @@ button:hover {
   width: 70%;
   margin: 50px auto;
 }
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
+}
