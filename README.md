@@ -5,7 +5,7 @@ Você pode **adicionar**, **marcar como concluída (check)**, **apagar individua
 
 <br/>
 
-<img width="100%" src="./src/assets/img/todo-demo.png" />
+<img width="100%" src="./src/assets/img/bg-task.png" />
 
 
 
