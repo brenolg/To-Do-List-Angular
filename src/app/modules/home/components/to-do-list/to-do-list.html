@@ -6,14 +6,16 @@
 <section [ngClass]="{ 'loading': !taskList.length }">
   @if (taskList.length) {
     <ul>
-      @for (item of taskList; track $index) {
+      @for (item of taskList; track item.id) {
         <li>
-          <input type="checkbox" [(ngModel)]="item.checked">
-          <input
-            type="text"
-            (keyup)="validationInput(item.task, $index)"
-            [(ngModel)]="item.task"
-            [class.checked]="item.checked">
+          <input type="checkbox"
+                [(ngModel)]="item.checked"
+                (ngModelChange)="setLocalStorage()">
+          <input type="text"
+                (keyup)="validationInput(item.task, $index)"
+                [(ngModel)]="item.task"
+                (ngModelChange)="setLocalStorage()"
+                [class.checked]="item.checked">
 
           <button (click)="deleteItemTaskList($index)">
             <img src="assets/icons/icon-trash.svg" alt="Deletar item">

@@ -25,7 +25,8 @@ export class ToDoList implements DoCheck {
   }
 
   public setEmitTaskList(event: string) {
-    return this.taskList.push({ task: event, checked: false });
+    this.taskList.unshift({ id: Date.now(), task: event, checked: false });
+    this.setLocalStorage();
   }
 
   public deleteItemTaskList(event: number) {
