@@ -1,4 +1,4 @@
-# To-Do List (Angular + LocalStorage)
+# To-Do List 
 
 Aplicação web simples e eficiente para gerenciar tarefas do dia a dia.  
 Você pode **adicionar**, **marcar como concluída (check)**, **apagar individualmente** e **apagar todas** as tarefas tudo isso **sincronizado automaticamente com o `localStorage`**, garantindo que sua lista continue lá mesmo após fechar o navegador.
@@ -29,7 +29,7 @@ Você pode **adicionar**, **marcar como concluída (check)**, **apagar individua
 
 ##  Tecnologias Utilizadas
 
-- **Angular** (v16+ ou v17+)
+- **Angular** 
 - **TypeScript**
 - **HTML / SCSS**
 - **LocalStorage**
