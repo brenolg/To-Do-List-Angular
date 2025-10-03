@@ -8,6 +8,7 @@ Você pode **adicionar**, **marcar como concluída (check)**, **apagar individua
 <img width="100%" src="./src/assets/img/bg-task.png" />
 
 
+
 <a	href="https://brenolg.github.io/To-Do-List-Angular/"
 	target="_blank"
 	rel="noopener noreferrer"> To do list Page
