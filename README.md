@@ -33,8 +33,6 @@ Você pode **adicionar**, **marcar como concluída (check)**, **apagar individua
 - **TypeScript**
 - **HTML / SCSS**
 - **LocalStorage**
-- (Opcional) **angular-cli-ghpages** para deploy no GitHub Pages
-- (Opcional) **Jasmine/Karma** para testes unitários
 
 ---
 
