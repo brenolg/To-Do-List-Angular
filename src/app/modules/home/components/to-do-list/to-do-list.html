@@ -1,3 +1,8 @@
+<app-to-do-input-add-itens
+  (emitItemTaskList)="setEmitTaskList($event)">
+</app-to-do-input-add-itens>
+
+
 <section [ngClass]="{ 'loading': !taskList.length }">
   @if (taskList.length) {
     <ul>
@@ -19,9 +24,6 @@
   }
 </section>
 
-<app-to-do-input-add-itens
-  (emitItemTaskList)="setEmitTaskList($event)">
-</app-to-do-input-add-itens>
 
 @if (taskList.length) {
   <app-to-do-delete-all (click)="deleteAllTaskList()"></app-to-do-delete-all>

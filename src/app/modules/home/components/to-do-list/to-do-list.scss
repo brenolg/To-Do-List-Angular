@@ -2,32 +2,36 @@
 
 section{
   width: 100%;
-  min-height: 250px;
-
+  min-height: 350px;
   background: $secondary-background-color;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-
-  margin-top: 20px;
-
+  border-radius: 20px;
+  margin-top: 60px;
   &.loading{
     background-image: url("../../../../../assets/img/bg-task.png");
     background-repeat: no-repeat;
-    background-position: center 30px;
+    background-position: center ;
+    background-size: 250px;
   }
 
   ul{
     padding: 20px;
 
     li{
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      margin-bottom: 10px;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
 
       input{
         &[type="checkbox"]{
-          width: 5%;
+          width: 20px;
+          height: 20px;
+          accent-color: $tertiary-background-color;
         }
         &[type="text"]{
           width: 80%;
@@ -47,6 +51,14 @@ section{
         background: none;
         border: none;
       }
+    }
+    li:hover {
+        transform: scale(1.01);
+
+    }
+    img {
+      width: 20px;
+      height: 20px;
     }
   }
 }
