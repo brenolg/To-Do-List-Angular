@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
 
 })
 export class App {
-//npx angular-cli-ghpages --dir="dist/to-do-list/browser" --repo="https://github.com/brenolg/To-Do-List-Angular.git" Faz o build e publica no github pages
+  //ng build --configuration production --base-href "https://brenolg.github.io/To-Do-List-Angular/"
+
+  //npx angular-cli-ghpages --dir="dist/to-do-list/browser" --repo="https://github.com/brenolg/To-Do-List-Angular.git" Faz o build e publica no github pages
 }
