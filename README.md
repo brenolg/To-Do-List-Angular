@@ -1,59 +1,82 @@
-# ToDoList
+# To-Do List (Angular + LocalStorage)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+Aplicação web simples e eficiente para gerenciar tarefas do dia a dia.  
+Você pode **adicionar**, **marcar como concluída (check)**, **apagar individualmente** e **apagar todas** as tarefas tudo isso **sincronizado automaticamente com o `localStorage`**, garantindo que sua lista continue lá mesmo após fechar o navegador.
 
-## Development server
+<br/>
 
-To start a local development server, run:
+<img width="100%" src="./src/assets/img/bg-task.png" />
 
+
+<a	href="https://brenolg.github.io/To-Do-List-Angular/"
+	target="_blank"
+	rel="noopener noreferrer"> To do list Page
+<a/>
+
+<br/>
+
+##  Funcionalidades
+
+- **Adicionar tarefa** com validação (ignora entradas vazias e espaços duplos);
+- **Marcar/Desmarcar tarefa** como concluída (checkbox);
+- **Editar texto** da tarefa inline;
+- **Excluir tarefa individualmente**;
+- **Excluir todas as tarefas** com um clique;
+- **Persistência automática** no `localStorage` (carrega e salva a cada alteração);
+- **Ordem de inserção personalizada** ;
+- **Feedback visual** para tarefas concluídas (estilo “checked”).
+
+##  Tecnologias Utilizadas
+
+- **Angular** (v16+ ou v17+)
+- **TypeScript**
+- **HTML / SCSS**
+- **LocalStorage**
+- (Opcional) **angular-cli-ghpages** para deploy no GitHub Pages
+- (Opcional) **Jasmine/Karma** para testes unitários
+
+---
+
+## 🚀 Instalação e Execução Local
+
+> Não é necessário rodar localmente se você acessar a versão online.  
+> Caso queira executar no seu ambiente, siga os passos:
+
+1. **Clone o repositório**
+```bash
+git clone git@github.com:brenolg/To-Do-List-Angular.git
+```
+
+2. **Acesse a pasta e instale as dependências**
+```bash
+cd To-Do-List-Angular
+npm install
+```
+
+3. **Inicie o servidor de desenvolvimento**
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+4. **Abra no navegador**
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+##  Requisitos do Projeto
 
-```bash
-ng generate --help
-```
+1. Utilizar **Angular** para gerenciar estado e componentes;
+2. Layout **responsivo** (desktop, tablet e mobile);
+3. Estilização de **tarefas concluídas** (ex.: texto tachado / opacidade reduzida);
+4. **Persistir tarefas** no `localStorage` (carregar/salvar automaticamente);
+5. **Listar todas as tarefas** e permitir visualizar/editar cada uma;
+6. **Adicionar tarefas** via input + botão/Enter;
+7. **Marcar tarefas** como concluídas (checkbox);
+8. **Excluir tarefa individualmente**;
+9. **Excluir todas as tarefas** (com desabilitar quando lista vazia);
 
-## Building
+---
 
-To build the project run:
+##  Agradecimentos
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Agradeço à comunidade Angular pelo ecossistema e documentação de qualidade, e às pessoas que compartilham conhecimento abertamente. Seu feedback é bem-vindo — sugestões e PRs ajudam o projeto a evoluir!
