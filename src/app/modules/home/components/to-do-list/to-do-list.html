@@ -28,5 +28,5 @@
 
 
 @if (taskList.length) {
-  <app-to-do-delete-all (click)="deleteAllTaskList()"></app-to-do-delete-all>
+  <app-to-do-delete-all [taskList]="taskList"/>
 }

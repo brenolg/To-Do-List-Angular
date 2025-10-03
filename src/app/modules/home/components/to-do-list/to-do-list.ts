@@ -16,31 +16,29 @@ import { TaskList } from '../../model/task-list';
 })
 
 export class ToDoList implements DoCheck {
+  //DoCheck faz parte do ciclo de vida de componentes. Toda vez que ele roda, o método ngDoCheck() é chamado.
 
+  // Lista de tarefas, carregada do LocalStorage
   public taskList: Array<TaskList> = JSON.parse(localStorage.getItem("list") || '[]');
   constructor() { }
 
+  // Sempre que houver mudança, salva no LocalStorage
   ngDoCheck() {
     this.setLocalStorage()
   }
 
+  // Recebe um evento de novo item e adiciona à lista
   public setEmitTaskList(event: string) {
     this.taskList.unshift({ id: Date.now(), task: event, checked: false });
     this.setLocalStorage();
   }
 
+  // Remove uma tarefa pelo índice
   public deleteItemTaskList(event: number) {
     return this.taskList.splice(event, 1);
   }
 
-  public deleteAllTaskList() {
-    const confirm = window.confirm("Tem certeza que deseja Deletar tudo?");
-
-    if (confirm) {
-      this.taskList = [];
-    }
-  }
-
+  // Validação de input (não permitir string vazia)
   public validationInput(event: string, index: number) {
 
     if (!event.length) {
@@ -50,9 +48,9 @@ export class ToDoList implements DoCheck {
         this.deleteItemTaskList(index);
       }
     }
-
   }
 
+  // Salva a lista no LocalStorage
   public setLocalStorage() {
     if (this.taskList) {
       this.taskList.sort((first, last) => Number(first.checked) - Number(last.checked));

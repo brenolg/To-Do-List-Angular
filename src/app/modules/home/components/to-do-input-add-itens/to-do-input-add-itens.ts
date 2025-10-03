@@ -9,8 +9,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class ToDoInputAddItens implements OnInit  {
 
+  // Emite o item digitado para o componente pai
   @Output() public emitItemTaskList = new EventEmitter();
 
+  // Guarda o texto digitado
   public addItemTaskList: string = "";
 
   constructor() { }
@@ -18,6 +20,7 @@ export class ToDoInputAddItens implements OnInit  {
   ngOnInit(): void {
   }
 
+  //Enviando tarefa para o componente pai
   public submitItemTaskList() {
     this.addItemTaskList = this.addItemTaskList.trim();
 
